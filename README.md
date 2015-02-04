@@ -4,7 +4,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-[logrus](https://github.com/Sirupsen/ndjson-logrus) style log formatter.
+[logrus](https://github.com/Sirupsen/logrus) style log formatter.
 Takes in [ndjson][ndj] and makes it pretty.
 
 ## Installation
