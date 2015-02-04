@@ -1,0 +1,43 @@
+{
+  "name": "ndjson-logrus",
+  "version": "1.0.0",
+  "description": "logrus style log formatter. Takes in ndjson and makes it pretty.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test",
+    "test-cov": "NODE_ENV=test istanbul cover test.js",
+    "lint": "eslint ."
+  },
+  "repository": "yoshuawuyts/ndjson-logrus",
+  "keywords": [
+    "ndjson",
+    "log",
+    "pretty",
+    "bole",
+    "debug-to-json",
+    "json",
+    "logs",
+    "logging",
+    "logger",
+    "transform",
+    "bistre"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "split": "^0.3.0",
+    "stream-combiner": "^0.2.0",
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "bole": "^2.0.0",
+    "eslint": "^0.13.0",
+    "istanbul": "^0.3.5",
+    "tape": "^3.5.0"
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "README.md"
+  ]
+}
