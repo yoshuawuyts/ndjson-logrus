@@ -16,14 +16,7 @@ $ npm install ndjson-logrus
 ```sh
 node server.js | ndjson-logrus
 ```
-```
-INFO[0000] [core-db] running and operational
-WARN[0000] [core-db] some parameter is not set
-INFO[0000] [api-users] starting something
-INFO[0000] [api-users] starting another thing
-INFO[0001] [api-users] --> GET / 200 357ms 922kb
-FATA[0001] [api-users] uncaught exception
-```
+![screenshot](./screenshot.png)
 
 ## See Also
 - [bole](https://github.com/rvagg/bole) - modular logger
