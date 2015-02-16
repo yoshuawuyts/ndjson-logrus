@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var ndjl = require('./')
+var ndjl = require('../')
 
 var opts = {}
 opts.time = (process.argv.indexOf('--time') > -1)

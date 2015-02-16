@@ -3,13 +3,11 @@
   "version": "1.0.4",
   "description": "logrus style log formatter. Takes in ndjson and makes it pretty.",
   "main": "index.js",
+  "bin": "./bin/ndjson-logrus",
   "scripts": {
     "test": "NODE_ENV=test node test",
     "test-cov": "NODE_ENV=test istanbul cover test.js",
     "lint": "eslint ."
-  },
-  "bin": {
-    "ndjson-logrus": "./cli.js"
   },
   "preferGlobal": true,
   "repository": "yoshuawuyts/ndjson-logrus",
