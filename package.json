@@ -1,6 +1,6 @@
 {
   "name": "ndjson-logrus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "logrus style log formatter. Takes in ndjson and makes it pretty.",
   "main": "index.js",
   "scripts": {
