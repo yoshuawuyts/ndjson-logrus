@@ -8,6 +8,9 @@
     "test-cov": "NODE_ENV=test istanbul cover test.js",
     "lint": "eslint ."
   },
+  "bin": {
+    "ndjson-logrus": "./cli.js"
+  },
   "repository": "yoshuawuyts/ndjson-logrus",
   "keywords": [
     "ndjson",
