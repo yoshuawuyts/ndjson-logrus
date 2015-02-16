@@ -11,6 +11,7 @@
   "bin": {
     "ndjson-logrus": "./cli.js"
   },
+  "preferGlobal": true,
   "repository": "yoshuawuyts/ndjson-logrus",
   "keywords": [
     "ndjson",
