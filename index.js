@@ -60,9 +60,15 @@ function logrus (opts) {
     )
     longest = data.name.length > longest ? data.name.length : longest
     const now = new Date(data.time)
+    delete data.time
+
     const lev = chalk[level](levelMap[data.level])
+    delete data.level
+
     const time = '[' + numPad((~~((now.getTime() - epoch) / 100)) % 10000) + ']'
     const nom = '[' + data.name + ']'
+    delete data.name
+
     const line = [lev + time, nom]
 
     if (data.message) {
@@ -76,6 +82,12 @@ function logrus (opts) {
     } else {
       line.push(JSON.stringify(data, null, 2))
     }
+
+    delete data.message
+    delete data.pid
+    delete data.hostname
+    const keys = Object.keys(data).map(prettyKeys(data))
+    line.push(keys)
 
     this.push(line.join(' '))
     this.push('\n')
@@ -98,4 +110,12 @@ function numPad (num) {
     num = '0' + num
   }
   return num
+}
+
+// prettyify keys of an object
+function prettyKeys(obj) {
+  return function map(key) {
+    const val = obj[key]
+    return key + '=' + (typeof val == 'string' ? "\"" + val + "\"" : val)
+  }
 }

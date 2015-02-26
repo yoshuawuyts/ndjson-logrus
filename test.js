@@ -30,6 +30,7 @@ logs.forEach(function(log) {
 })
 logs.forEach(function(log) {
   log.debug('hello world')
+  log.debug({hello: 'world', message: 'foobar'})
 })
 logs[0].debug(new Error('hello world'))
 
